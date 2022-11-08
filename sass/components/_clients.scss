@@ -1,0 +1,55 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients__title {
+    margin: 0 0 50px 0;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.clients__list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    gap: 30px;
+    margin: 0;
+}
+
+.company {
+    width: 170px;
+    height: 92px;
+}
+
+.company__logo {
+    fill: $icons-color;
+    transition-property: color, background-color, fill, box-shadow, border-color, opacity, visibility, transform;
+    transition-duration: $trans-duration;
+    transition-timing-function: $cubic;
+    .company__link:hover &,
+    .company__link:focus & {
+        fill: $accent-color;
+    }
+}
+
+.company__link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $icons-color;
+    border-radius: 4px;
+    transition-property: color, background-color, fill, box-shadow, border-color, opacity, visibility, transform;
+    transition-duration: $trans-duration;
+    transition-timing-function: $cubic;
+    &:hover,
+    &:focus {
+            border: 1px solid $accent-color;
+            border-radius: 4px;
+        }
+}
+
