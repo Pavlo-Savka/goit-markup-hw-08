@@ -390,8 +390,8 @@ body {
   padding-bottom: 210px;
   margin: 0 auto;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -652,7 +652,7 @@ body {
   left: 0;
   border: 2px solid #2196f3;
   border-radius: 2px;
-  background-image: url(../../images/Vector.svg);
+  background-image: url("../images/Vector.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #2196f3;
