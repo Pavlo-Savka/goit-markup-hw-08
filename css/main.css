@@ -355,11 +355,9 @@ body {
   background-color: #f5f4fa;
 }
 
-.hero {
-  background-color: #2f303a;
-}
-
 .hero__title {
+  width: 700px;
+  margin: 0 auto 30px auto;
   color: #fff;
   font-weight: 900;
   font-size: 44px;
@@ -370,13 +368,17 @@ body {
 }
 
 .hero__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  border-radius: 4px;
   color: #fff;
   background: #2196f3;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  font-family: inherit;
   letter-spacing: 0.06em;
   border-color: transparent;
 }
@@ -387,24 +389,9 @@ body {
   padding-top: 200px;
   padding-bottom: 210px;
   margin: 0 auto;
-}
-
-.hero__title {
-  width: 700px;
-  margin: 0 auto 30px auto;
-}
-
-.hero__button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 32px;
-  border-radius: 4px;
-}
-
-.hero {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero-img.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-img.jpg);
+  background-color: #2f303a;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
