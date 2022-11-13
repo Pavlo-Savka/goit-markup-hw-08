@@ -1,8 +1,22 @@
+.page-header {
+    border-bottom: 1px solid $header-border-color;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .header-contacts {
+    display: flex;
+    margin: 0 0 0 auto;
+    padding-left: 0;
+    gap: 45px;
+    align-items: center;
+    list-style-type: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+    @media (max-width: $screen-sm-min) {
+            display: none;
+        }
 }
 
 .header-contacts__tel-link, 
@@ -33,19 +47,8 @@
         fill: $accent-color;
     }
 }
-.page-header {
-    border-bottom: 1px solid $header-border-color;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-.header-contacts {
-    display: flex;
-    margin: 0 0 0 auto;
-    padding-left: 0;
-    gap: 45px;
-    align-items: center;
-    list-style-type: none;
-}
+
+
 .header-contacts__item {
     display: flex;
 }
@@ -58,5 +61,12 @@
     transition-timing-function: $cubic;
 }
 
-
-
+.modile_menu { 
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        padding: 0;
+        margin: 0;
+        background: none;
+        position: absolute;
+}
