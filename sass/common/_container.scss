@@ -1,10 +1,14 @@
 .container {
     display: flex;
     padding: 0 15px;
-    width: 1200px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
+    @media (max-width: $screen-sm-min) {
+        justify-content: space-between;
+        flex-grow: 1;
+    }
 }
 .clients .container {
     flex-direction: column;
