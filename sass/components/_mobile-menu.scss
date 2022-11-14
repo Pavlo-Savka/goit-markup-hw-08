@@ -1,4 +1,9 @@
-    .mobileMenu__button-close {
+   .mobile-menu {
+   @media (min-width: $screen-sm-min) {
+       display: none;
+   }
+}
+   .mobileMenu__button-close {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -42,8 +47,7 @@
 
     .mobileMenu {
         position: fixed;
-        display: block;
-        margin-left: auto;
+        flex-direction: column;
         display: none;
         top: 0;
         left: 0;
@@ -54,26 +58,25 @@
         z-index: 1;
     
        &.is-open {
-         display: block; 
+         display: flex; 
         }
     }
-     /*   @media (max-width: $screen-sm-min) {
-        display: none;
-    }*/
-
     .menu-list {
     display: flex;
     flex-direction: column;
+    gap: 32px;
     padding: 0;
+    margin: 0;
     list-style-type: none;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
     justify-content: left;
     letter-spacing: 0.02em;
+    color: $headline-color;
     }
         .menu-list__item {
-            margin: 0 0 32px 0;
+            margin: 0;
             color: inherit;
             text-decoration: none;
             transition-property: color, background-color, fill, box-shadow, border-color, opacity, visibility, transform;
@@ -85,14 +88,57 @@
                 fill: $accent-color;
 
             }
-    
-            &:focus {
+               &:focus {
                 color: $accent-color;
                 fill: $accent-color;
-
             }
         }
-    /*
-    @media (max-width: $screen-sm-min) {
-        ;
-    }*/
+.mobile-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 0;
+        margin: 0;
+        margin-top: auto;
+        list-style-type: none;
+        font-weight: 500;
+        font-size: 34px;
+        justify-content: left;
+        letter-spacing: 0.02em;
+
+}
+.mobile-contacts__tel {
+    text-decoration: none;
+    color: #2196F3;
+    margin-bottom: 0;
+}
+.mobile-contacts__mail {
+        text-decoration: none;
+        font-size: 24px;
+        color: $paragraf-color;
+}
+.mobile-social {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 64px 0 0 0;
+    justify-content: left;
+}
+.mobile-social_item {
+        display: flex;
+            flex-direction: column;
+            gap: 32px;
+            margin-top: auto;
+            list-style-type: none;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.2px;
+            letter-spacing: 0.02em;
+}
+.mobile-social__link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: $accent-color;
+
+}
