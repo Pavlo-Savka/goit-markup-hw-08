@@ -3,8 +3,12 @@
     padding-top: 24px;
     padding-bottom: 24px;
     @media (max-width: $screen-sm-min) {
-        padding-top: 16px;
-        padding-bottom: 16px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    @media (max-width: $screen-sm-min) {
+        padding-top: 21px;
+        padding-bottom: 21px;
     }
 }
 .header-contacts {
@@ -21,12 +25,19 @@
     @media (max-width: $screen-sm-min) {
             display: none;
         }
+    @media (max-width: $screen-md-min) {
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+
+        }
 }
 
 .header-contacts__tel-link, 
 .header-contacts__mail-link {
     display: flex;
     align-items: center;
+    white-space: nowrap;
     color: $paragraf-color;
     text-decoration: none;
     &:hover, 
@@ -63,14 +74,4 @@
     transition-property: color, fill;
     transition-duration: $trans-duration;
     transition-timing-function: $cubic;
-}
-
-.modile_menu { 
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        padding: 0;
-        margin: 0;
-        background: none;
-        position: absolute;
 }

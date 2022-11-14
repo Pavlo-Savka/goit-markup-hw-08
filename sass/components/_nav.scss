@@ -9,8 +9,11 @@ font-size: 14px;
 line-height: 1.17;
 letter-spacing: 0.02em;
     @media (max-width: $screen-sm-min) {
-            display: none;
+        display: none;
         }
+    @media (max-width: $screen-md-min) {
+        margin: 0 0 0 87px;
+    }
 }
 .nav-list__link {
     position: relative;
@@ -51,11 +54,14 @@ letter-spacing: 0.02em;
 }
 }
 .nav-container {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
     }
+
+
     
 
 .nav-list__link--current {
