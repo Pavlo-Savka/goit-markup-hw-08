@@ -2,15 +2,16 @@
     border-bottom: 1px solid $header-border-color;
     padding-top: 24px;
     padding-bottom: 24px;
+    @media (max-width: $screen-md-min) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
     @media (max-width: $screen-sm-min) {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    @media (max-width: $screen-sm-min) {
-        padding-top: 21px;
-        padding-bottom: 21px;
-    }
 }
+
 .header-contacts {
     display: flex;
     margin: 0 0 0 auto;
@@ -29,7 +30,8 @@
             flex-direction: column;
             gap: 10px;
             align-items: flex-start;
-
+            margin: 0 0 0 96px;
+            font-size: 12px;
         }
 }
 
@@ -62,8 +64,17 @@
         fill: $accent-color;
     }
 }
-
-
+.header-contacts__mail-icon {
+    @media (max-width: $screen-md-min) {
+        width: 14px;
+}
+}
+.header-contacts__tel-icon {
+    @media (max-width: $screen-md-min) {
+        width: 10px;
+        height: 14px;
+    }
+}
 .header-contacts__item {
     display: flex;
 }

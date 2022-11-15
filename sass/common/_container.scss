@@ -9,6 +9,12 @@
         justify-content: space-between;
         flex-grow: 1;
     }
+    @media (max-width: $screen-md-min) {
+        justify-content: space-between;
+        flex-grow: 1;
+        
+    }
+
 }
 .clients .container {
     flex-direction: column;
