@@ -1,23 +1,32 @@
 .page-header {
     border-bottom: 1px solid $header-border-color;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    @media (max-width: $screen-md-min) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media (min-width: $screen-md-min) {
         padding-top: 21px;
         padding-bottom: 21px;
     }
-    @media (max-width: $screen-sm-min) {
-        padding-top: 10px;
-        padding-bottom: 10px;
+    @media (min-width: $screen-xl-min) {
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 }
 
 .header-contacts {
+    display: none;
+    @media (min-width: $screen-md-min) {
     display: flex;
     margin: 0 0 0 auto;
     padding-left: 0;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin: 0 0 0 96px;
+    font-size: 12px;
+}
+    @media (min-width: $screen-lg-min) {
     gap: 45px;
-    align-items: center;
+    
     list-style-type: none;
     font-family: 'Roboto';
     font-style: normal;
@@ -25,18 +34,9 @@
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    @media (max-width: $screen-sm-min) {
-            display: none;
-        }
-    @media (max-width: $screen-md-min) {
-            flex-direction: column;
-            gap: 10px;
-            align-items: flex-start;
-            margin: 0 0 0 96px;
-            font-size: 12px;
-        }
-}
 
+}
+}
 .header-contacts__tel-link, 
 .header-contacts__mail-link {
     display: flex;
