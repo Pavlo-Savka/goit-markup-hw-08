@@ -1,6 +1,5 @@
 .nav-list {
-display: flex;
-margin: 0 0 0 93px;
+display: none;
 padding-left: 0;
 gap: 50px;
 list-style-type: none;
@@ -8,15 +7,14 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.17;
 letter-spacing: 0.02em;
-    @media (max-width: $screen-sm-min) {
-        display: none;
-        }
-    @media (max-width: $screen-md-min) {
-        margin: 0 0 0 87px; 
+@media (min-width: $screen-md-min) {
+display: flex;
+}
+@media (min-width: $screen-xl-min) {
+margin: 0 0 0 88px; 
     }
-        @media (max-width: $screen-xl-min) {
-        margin: 0 0 0 93px;
-
+@media (max-width: $screen-xl-min) {
+margin: 0 0 0 92px;
     }
 }
 .nav-list__link {

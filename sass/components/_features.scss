@@ -50,7 +50,7 @@
 
     /*max-width: calc((100%-30px)/2);*/
     max-width: 450px;
-    min-width: calc((100%-30px)/2);
+    min-width: calc((100% - 30px) / 2);
     
     }
     @media (max-width: $screen-sm-min) {

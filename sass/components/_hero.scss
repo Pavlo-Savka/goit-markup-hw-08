@@ -1,21 +1,19 @@
 .hero__title {
-    
-    width: 700px;
-    margin: 0 auto 30px auto;
-    color: $main-color;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-@media (max-width: $screen-md-min) {
     width: 360px;
     margin: 0 auto 60px auto;
     font-size: 26px;
     line-height: 1.6;
+    color: $main-color;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    @media (min-width: $screen-md-min) {
+    width: 700px;
+    margin: 0 auto 30px auto;
+    font-size: 44px;
+    line-height: 1.36;
 }
-
 }
 .hero__button {
     display: block;
