@@ -9,11 +9,9 @@ line-height: 1.17;
 letter-spacing: 0.02em;
 @media (min-width: $screen-md-min) {
 display: flex;
+margin: 0 0 0 88px;
 }
 @media (min-width: $screen-xl-min) {
-margin: 0 0 0 88px; 
-    }
-@media (max-width: $screen-xl-min) {
 margin: 0 0 0 92px;
     }
 }

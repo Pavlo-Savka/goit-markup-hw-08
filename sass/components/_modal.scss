@@ -4,15 +4,19 @@
 .modal {
     position: absolute;
     display: flex;
-    top: 50%;
-    left: 50%;
-    min-width: 528px;
-    min-height: 581px;
     padding: 40px;
     background-color: $main-color;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     flex-direction: column;
+    width: 450px;
+    height: 609px;
+    top: 50%;
+    left: 50%;
+    @media (min-width: $screen-xl-min) {
+    width: 528px;
+    height: 581px;
+    }
     .backdrop & {
         transition-property: opacity, visibility, transform;
         transition-duration: $trans-duration;
