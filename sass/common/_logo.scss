@@ -8,7 +8,7 @@
         font-weight: 700;
         line-height: 1.17;
         font-size: 24px;
-        @media (mіn-width: $screen-xl-min) {
+        @media (min-width: $screen-xl-min) {
         font-size: 26px;
     }   
 }
@@ -24,5 +24,10 @@
     color: $main-color;
 }
 .page-footer__logo {
+   display: flex;
     margin-bottom: 20px;
+    justify-content: center;
+    @media (min-width: $screen-xl-min) {
+display: block;
+    }
 }
