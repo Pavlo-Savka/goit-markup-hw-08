@@ -1,19 +1,19 @@
 .clients {
-    @media (min-width: $screen-xl-min) {
     padding: 60px 0;
-    }
+    @media (min-width: $screen-xl-min) {
     padding: 94px 0;
-    
+    }  
 }
 
 .clients__title {
     margin: 0 0 30px 0;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     @media (min-width: $screen-xl-min) {
     margin: 0 0 50px 0;
+    font-size: 36px;
     }
 }
 

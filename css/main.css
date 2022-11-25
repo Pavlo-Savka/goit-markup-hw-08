@@ -233,17 +233,17 @@ body {
 }
 
 .clients {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 @media (min-width: 1200px) {
   .clients {
-    padding: 60px 0;
+    padding: 94px 0;
   }
 }
 
 .clients__title {
   margin: 0 0 30px 0;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -251,6 +251,7 @@ body {
 @media (min-width: 1200px) {
   .clients__title {
     margin: 0 0 50px 0;
+    font-size: 36px;
   }
 }
 
@@ -471,11 +472,11 @@ body {
 }
 
 .features {
-  padding-top: 60px;
+  padding: 60px 0;
 }
 @media (min-width: 1200px) {
   .features {
-    padding-top: 94px;
+    padding: 94px 0;
   }
 }
 
@@ -572,8 +573,7 @@ body {
 .hero {
   -ms-flex-line-pack: center;
       align-content: center;
-  padding-top: 200px;
-  padding-bottom: 210px;
+  padding: 118px 0;
   margin: 0 auto;
   background-color: #2f303a;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-1600-x1.jpg");
@@ -581,6 +581,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -759,9 +764,6 @@ body {
   gap: 10px;
   padding: 0;
   margin: 64px 0 0 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1000,10 +1002,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
-  margin-left: 12px;
+  margin-left: 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (min-width: 1200px) {
+  .modal__terms {
+    margin-left: 12px;
+  }
 }
 
 .modal__button {
@@ -1033,10 +1040,16 @@ body {
 
 .modal__terms-label {
   position: relative;
-  padding-left: 23px;
-  font-size: 14px;
+  padding-left: 24px;
+  font-size: 12px;
   line-height: 1.7;
   color: #757575;
+}
+@media (min-width: 1200px) {
+  .modal__terms-label {
+    padding-left: 24px;
+    font-size: 14px;
+  }
 }
 .modal__terms-label::before {
   content: "";

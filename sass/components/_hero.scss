@@ -33,8 +33,7 @@
 
 .hero {
     align-content: center;
-    padding-top: 200px;
-    padding-bottom: 210px;
+    padding: 118px 0;
     margin: 0 auto;
     background-color: $footer-color;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -42,7 +41,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    @media (min-width: $screen-xl-min) {
+    padding: 200px 0;
+    }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {

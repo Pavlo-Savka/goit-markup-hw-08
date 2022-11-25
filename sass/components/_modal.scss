@@ -131,8 +131,11 @@
 .modal__terms {
     display: flex;
     margin-bottom: 30px;
-    margin-left: 12px;
+    margin-left: 0px;
     align-items: center;
+    @media (min-width: $screen-xl-min) {
+    margin-left: 12px;
+    }
 }
 
 .modal__button {
@@ -159,10 +162,15 @@
 }
 .modal__terms-label {
     position: relative;
-    padding-left: 23px;
-    font-size: 14px;
+    padding-left: 24px;
+    font-size: 12px;
     line-height: 1.7;
     color: $paragraf-color;
+    @media (min-width: $screen-xl-min) {
+    padding-left: 24px;
+    font-size: 14px;
+    }
+
     &::before {
         content: "";
         position: absolute;
