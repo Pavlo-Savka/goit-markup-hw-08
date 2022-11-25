@@ -11,8 +11,11 @@
     @media (min-width: $screen-md-min) {
     width: 700px;
     margin: 0 auto 30px auto;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
+    }
+    @media (min-width: $screen-xl-min) {
+    font-size: 44px;
 }
 }
 .hero__button {
